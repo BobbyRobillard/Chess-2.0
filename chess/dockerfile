@@ -16,5 +16,7 @@ COPY . .
 # Step 6: Expose the port the app runs on
 EXPOSE 5173
 
+ENV CHOKIDAR_USEPOLLING=true
+
 # Step 7: Start the React development server
 CMD ["npm", "run", "dev"]
